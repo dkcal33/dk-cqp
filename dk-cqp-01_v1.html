@@ -332,8 +332,8 @@
     </div>
     <div class="field">
       <label>저장 폴더 이름</label>
-      <input type="text" id="folderNameInput" placeholder="교정품질관리">
-      <div class="hint">Google Drive에 생성될 최상위 폴더명입니다.</div>
+      <input type="text" id="folderNameInput" placeholder="DK-CQP-01" disabled>
+      <div class="hint">Google Drive에 생성될 최상위 폴더명입니다. (고정된 이름이며 변경할 수 없습니다)</div>
     </div>
     <div class="field">
       <label>상위 폴더 (선택)</label>
@@ -702,7 +702,7 @@
 <script>
 /* ========================= 상태/설정 ========================= */
 const SCOPE = 'https://www.googleapis.com/auth/drive.file';
-let ROOT_FOLDER_NAME = localStorage.getItem('cqm_folder_name') || '교정품질관리';
+let ROOT_FOLDER_NAME = localStorage.getItem('cqm_folder_name') || 'DK-CQP-01';
 let PARENT_FOLDER_ID = localStorage.getItem('cqm_parent_folder_id') || '';
 const DEFAULT_CLIENT_ID = '193346212355-cc4o3rq31g4vaamsild1gnon1p0ftdvf.apps.googleusercontent.com';
 let CLIENT_ID = localStorage.getItem('cqm_client_id') || DEFAULT_CLIENT_ID;
