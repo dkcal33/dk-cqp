@@ -1046,12 +1046,12 @@ function confirmSignPassword(){
     const who = getSignerDisplayName(fbProfile, fbUser.email);
     $('signConfirmOkBtn').disabled = false;
     if(isPasswordAuthUser(fbUser)){
-      $('signConfirmSub').textContent = `${who} , 서명 전 본인 확인을 위해 비밀번호를 다시 입력하세요.`;
+      $('signConfirmSub').textContent = `${who}, 서명 전 본인 확인을 위해 비밀번호를 다시 입력하세요.`;
       $('signConfirmPwField').style.display = '';
       $('signConfirmPwInput').value = '';
       $('signConfirmOkBtn').textContent = '확인하고 서명';
     } else {
-      $('signConfirmSub').textContent = `${who} , 서명 전 본인 확인이 필요합니다. Google 계정으로 다시 확인하세요.`;
+      $('signConfirmSub').textContent = `${who}, 서명 전 본인 확인이 필요합니다. Google 계정으로 다시 확인하세요.`;
       $('signConfirmPwField').style.display = 'none';
       $('signConfirmOkBtn').textContent = 'Google 계정으로 확인하고 서명';
     }
